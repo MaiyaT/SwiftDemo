@@ -1,0 +1,34 @@
+
+platform :ios, '8.0'
+
+use_frameworks!
+
+target ‘YHSwiftDemo’ do
+
+    pod 'AFNetworking'
+    pod 'Alamofire'
+    pod 'ReactiveCocoa'
+    pod 'ReactiveObjCBridge'
+    pod 'MJRefresh'
+    pod 'HysteriaPlayer'
+    pod 'TMCache'
+    pod 'FMDB'
+    pod 'Masonry'
+    pod 'Toast'
+    pod 'MBProgressHUD'
+    pod 'SDWebImage'
+    pod 'BlocksKit'
+    pod 'UITableView+FDTemplateLayoutCell'
+    pod 'SnapKit'
+
+end
+
+
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
+end
