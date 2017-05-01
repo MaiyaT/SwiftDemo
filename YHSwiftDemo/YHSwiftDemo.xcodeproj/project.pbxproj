@@ -29,6 +29,10 @@
 		7AF80D231EB3778D00F6ED17 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D221EB3778D00F6ED17 /* GCDViewController.swift */; };
 		7AF80D261EB4B05A00F6ED17 /* ClassEnumStruceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D251EB4B05A00F6ED17 /* ClassEnumStruceViewController.swift */; };
 		7AF80D291EB57E7C00F6ED17 /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D281EB57E7C00F6ED17 /* ProtocolViewController.swift */; };
+		7AF80D2B1EB5AC3A00F6ED17 /* YHProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D2A1EB5AC3A00F6ED17 /* YHProtocol.swift */; };
+		7AF80D2E1EB6325200F6ED17 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D2D1EB6325200F6ED17 /* DelegateViewController.swift */; };
+		7AF80D301EB6E99400F6ED17 /* DelegatePassVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D2F1EB6E99400F6ED17 /* DelegatePassVViewController.swift */; };
+		7AF80D331EB7251700F6ED17 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D321EB7251700F6ED17 /* SingletonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 		7AF80D221EB3778D00F6ED17 /* GCDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		7AF80D251EB4B05A00F6ED17 /* ClassEnumStruceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassEnumStruceViewController.swift; sourceTree = "<group>"; };
 		7AF80D281EB57E7C00F6ED17 /* ProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
+		7AF80D2A1EB5AC3A00F6ED17 /* YHProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHProtocol.swift; sourceTree = "<group>"; };
+		7AF80D2D1EB6325200F6ED17 /* DelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		7AF80D2F1EB6E99400F6ED17 /* DelegatePassVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegatePassVViewController.swift; sourceTree = "<group>"; };
+		7AF80D321EB7251700F6ED17 /* SingletonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
 		F804B3EA20F77DF712E162F8 /* Pods-YHSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHSwiftDemo/Pods-YHSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +92,8 @@
 		7A210DCB1EB22DE2004098F1 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7AF80D311EB724EF00F6ED17 /* Singletion */,
+				7AF80D2C1EB6323800F6ED17 /* delegate */,
 				7AF80D271EB57E6F00F6ED17 /* protocol */,
 				7AF80D241EB4B03B00F6ED17 /* class_enum_struce */,
 				7AF80D211EB3777600F6ED17 /* gcd */,
@@ -228,8 +238,26 @@
 			isa = PBXGroup;
 			children = (
 				7AF80D281EB57E7C00F6ED17 /* ProtocolViewController.swift */,
+				7AF80D2A1EB5AC3A00F6ED17 /* YHProtocol.swift */,
 			);
 			name = protocol;
+			sourceTree = "<group>";
+		};
+		7AF80D2C1EB6323800F6ED17 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				7AF80D2D1EB6325200F6ED17 /* DelegateViewController.swift */,
+				7AF80D2F1EB6E99400F6ED17 /* DelegatePassVViewController.swift */,
+			);
+			name = delegate;
+			sourceTree = "<group>";
+		};
+		7AF80D311EB724EF00F6ED17 /* Singletion */ = {
+			isa = PBXGroup;
+			children = (
+				7AF80D321EB7251700F6ED17 /* SingletonViewController.swift */,
+			);
+			name = Singletion;
 			sourceTree = "<group>";
 		};
 		EF571D5F81A8A1C17488814C /* Frameworks */ = {
@@ -367,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABBCDC51EB1916900535C16 /* Rating.swift in Sources */,
+				7AF80D2E1EB6325200F6ED17 /* DelegateViewController.swift in Sources */,
 				7A210DCD1EB22E18004098F1 /* TimeViewController.swift in Sources */,
 				7ABBCD8D1EB1690F00535C16 /* ViewController.swift in Sources */,
 				7A210DD51EB2E004004098F1 /* FontViewController.swift in Sources */,
@@ -374,13 +403,16 @@
 				7A210DD81EB2EF47004098F1 /* BaseNavcViewController.swift in Sources */,
 				7ABBCD8B1EB1690F00535C16 /* AppDelegate.swift in Sources */,
 				7ABBCDC71EB193C000535C16 /* Book.swift in Sources */,
+				7AF80D331EB7251700F6ED17 /* SingletonViewController.swift in Sources */,
 				7AF80D291EB57E7C00F6ED17 /* ProtocolViewController.swift in Sources */,
 				7A210DDA1EB30086004098F1 /* Student.swift in Sources */,
 				7ABBCDC01EB1719C00535C16 /* Https.swift in Sources */,
 				7A210DCA1EB22C7C004098F1 /* BaseViewController.swift in Sources */,
 				7AF80D231EB3778D00F6ED17 /* GCDViewController.swift in Sources */,
 				7AF80BEE1EB3179400F6ED17 /* UserDefaultViewController.swift in Sources */,
+				7AF80D2B1EB5AC3A00F6ED17 /* YHProtocol.swift in Sources */,
 				7A210DC81EB22A49004098F1 /* HomeViewController.swift in Sources */,
+				7AF80D301EB6E99400F6ED17 /* DelegatePassVViewController.swift in Sources */,
 				7AF80D261EB4B05A00F6ED17 /* ClassEnumStruceViewController.swift in Sources */,
 				7A210DD21EB2BADA004098F1 /* YH_Common.swift in Sources */,
 			);
