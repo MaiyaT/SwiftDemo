@@ -33,6 +33,7 @@
 		7AF80D2E1EB6325200F6ED17 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D2D1EB6325200F6ED17 /* DelegateViewController.swift */; };
 		7AF80D301EB6E99400F6ED17 /* DelegatePassVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D2F1EB6E99400F6ED17 /* DelegatePassVViewController.swift */; };
 		7AF80D331EB7251700F6ED17 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D321EB7251700F6ED17 /* SingletonViewController.swift */; };
+		7AF80D361EB8199800F6ED17 /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D351EB8199800F6ED17 /* BlockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		7AF80D2D1EB6325200F6ED17 /* DelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 		7AF80D2F1EB6E99400F6ED17 /* DelegatePassVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegatePassVViewController.swift; sourceTree = "<group>"; };
 		7AF80D321EB7251700F6ED17 /* SingletonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
+		7AF80D351EB8199800F6ED17 /* BlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
 		F804B3EA20F77DF712E162F8 /* Pods-YHSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHSwiftDemo/Pods-YHSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		7A210DCB1EB22DE2004098F1 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7AF80D341EB8198200F6ED17 /* block */,
 				7AF80D311EB724EF00F6ED17 /* Singletion */,
 				7AF80D2C1EB6323800F6ED17 /* delegate */,
 				7AF80D271EB57E6F00F6ED17 /* protocol */,
@@ -260,6 +263,14 @@
 			name = Singletion;
 			sourceTree = "<group>";
 		};
+		7AF80D341EB8198200F6ED17 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				7AF80D351EB8199800F6ED17 /* BlockViewController.swift */,
+			);
+			name = block;
+			sourceTree = "<group>";
+		};
 		EF571D5F81A8A1C17488814C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +409,7 @@
 				7AF80D2E1EB6325200F6ED17 /* DelegateViewController.swift in Sources */,
 				7A210DCD1EB22E18004098F1 /* TimeViewController.swift in Sources */,
 				7ABBCD8D1EB1690F00535C16 /* ViewController.swift in Sources */,
+				7AF80D361EB8199800F6ED17 /* BlockViewController.swift in Sources */,
 				7A210DD51EB2E004004098F1 /* FontViewController.swift in Sources */,
 				7AF80D201EB36C7900F6ED17 /* YH_Category.swift in Sources */,
 				7A210DD81EB2EF47004098F1 /* BaseNavcViewController.swift in Sources */,

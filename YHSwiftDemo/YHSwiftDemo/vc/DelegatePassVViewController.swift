@@ -12,6 +12,8 @@ class DelegatePassVViewController: BaseViewController {
     
     var delegate : PassDelegate?
     
+    var passBlock : (_ text :String)->Void = {param in}
+    
     lazy var textF = UITextField()
     
     override func viewDidLoad() {
@@ -56,6 +58,9 @@ class DelegatePassVViewController: BaseViewController {
     func submit_event() {
 
         delegate?.passValue(string: textF.text!)
+        
+        passBlock(textF.text!)
+        
         self.navigationController?.popViewController(animated: true)
         
     }

@@ -37,8 +37,8 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             ["title":"enum class struct","vc":"ClassEnumStruceViewController"],
             ["title":"Protocol","vc":"ProtocolViewController"],
             ["title":"Delegate","vc":"DelegateViewController"],
-            ["title":"单例","vc":"SingletonViewController"]
-            
+            ["title":"单例","vc":"SingletonViewController"],
+            ["title":"Block","vc":"BlockViewController"]
         ]
         
         

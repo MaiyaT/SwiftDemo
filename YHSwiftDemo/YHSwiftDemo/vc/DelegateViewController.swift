@@ -47,7 +47,13 @@ class DelegateViewController: BaseViewController ,PassDelegate{
     
     func submit_action(){
         let vc = DelegatePassVViewController()
+        
         vc.delegate = self as PassDelegate
+        
+//        vc.passBlock = { value in
+//            self.passLab.text = value
+//        }
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
