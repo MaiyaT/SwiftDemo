@@ -34,6 +34,8 @@
 		7AF80D301EB6E99400F6ED17 /* DelegatePassVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D2F1EB6E99400F6ED17 /* DelegatePassVViewController.swift */; };
 		7AF80D331EB7251700F6ED17 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D321EB7251700F6ED17 /* SingletonViewController.swift */; };
 		7AF80D361EB8199800F6ED17 /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D351EB8199800F6ED17 /* BlockViewController.swift */; };
+		7AF80D381EB845A800F6ED17 /* ClosureCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D371EB845A800F6ED17 /* ClosureCaptureViewController.swift */; };
+		7AF80D681EB9BED200F6ED17 /* TraverseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF80D671EB9BED200F6ED17 /* TraverseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		7AF80D2F1EB6E99400F6ED17 /* DelegatePassVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegatePassVViewController.swift; sourceTree = "<group>"; };
 		7AF80D321EB7251700F6ED17 /* SingletonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
 		7AF80D351EB8199800F6ED17 /* BlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
+		7AF80D371EB845A800F6ED17 /* ClosureCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureCaptureViewController.swift; sourceTree = "<group>"; };
+		7AF80D671EB9BED200F6ED17 /* TraverseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraverseViewController.swift; sourceTree = "<group>"; };
 		F804B3EA20F77DF712E162F8 /* Pods-YHSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHSwiftDemo/Pods-YHSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +98,7 @@
 		7A210DCB1EB22DE2004098F1 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7AF80D661EB9BEA000F6ED17 /* Traverse */,
 				7AF80D341EB8198200F6ED17 /* block */,
 				7AF80D311EB724EF00F6ED17 /* Singletion */,
 				7AF80D2C1EB6323800F6ED17 /* delegate */,
@@ -267,8 +272,17 @@
 			isa = PBXGroup;
 			children = (
 				7AF80D351EB8199800F6ED17 /* BlockViewController.swift */,
+				7AF80D371EB845A800F6ED17 /* ClosureCaptureViewController.swift */,
 			);
 			name = block;
+			sourceTree = "<group>";
+		};
+		7AF80D661EB9BEA000F6ED17 /* Traverse */ = {
+			isa = PBXGroup;
+			children = (
+				7AF80D671EB9BED200F6ED17 /* TraverseViewController.swift */,
+			);
+			name = Traverse;
 			sourceTree = "<group>";
 		};
 		EF571D5F81A8A1C17488814C /* Frameworks */ = {
@@ -407,6 +421,7 @@
 			files = (
 				7ABBCDC51EB1916900535C16 /* Rating.swift in Sources */,
 				7AF80D2E1EB6325200F6ED17 /* DelegateViewController.swift in Sources */,
+				7AF80D681EB9BED200F6ED17 /* TraverseViewController.swift in Sources */,
 				7A210DCD1EB22E18004098F1 /* TimeViewController.swift in Sources */,
 				7ABBCD8D1EB1690F00535C16 /* ViewController.swift in Sources */,
 				7AF80D361EB8199800F6ED17 /* BlockViewController.swift in Sources */,
@@ -426,6 +441,7 @@
 				7A210DC81EB22A49004098F1 /* HomeViewController.swift in Sources */,
 				7AF80D301EB6E99400F6ED17 /* DelegatePassVViewController.swift in Sources */,
 				7AF80D261EB4B05A00F6ED17 /* ClassEnumStruceViewController.swift in Sources */,
+				7AF80D381EB845A800F6ED17 /* ClosureCaptureViewController.swift in Sources */,
 				7A210DD21EB2BADA004098F1 /* YH_Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

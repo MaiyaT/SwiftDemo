@@ -38,7 +38,10 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             ["title":"Protocol","vc":"ProtocolViewController"],
             ["title":"Delegate","vc":"DelegateViewController"],
             ["title":"单例","vc":"SingletonViewController"],
-            ["title":"Block","vc":"BlockViewController"]
+            ["title":"Block","vc":"BlockViewController"],
+            ["title":"闭包捕捉","vc":"ClosureCaptureViewController"],
+            ["title":"循环遍历集合","vc":"TraverseViewController"],
+            
         ]
         
         
@@ -67,6 +70,25 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
         let dic = list.reversed()[indexPath.row] as? [String:AnyObject] ?? [:]
         
         cell?.textLabel?.text = dic["title"] as? String
+        
+        if(1...4).contains(indexPath.row){
+            cell?.textLabel?.textColor = UIColor.purple
+        }else{
+            cell?.textLabel?.textColor = UIColor.black
+        }
+        
+        if([2,4,6,8].contains(indexPath.row)){
+            cell?.backgroundColor = UIColor.gray.withAlphaComponent(0.1)
+        }
+        else{
+            cell?.backgroundColor = UIColor.clear
+        }
+        
+        if 2...4 ~= indexPath.row{
+            cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+        }else{
+            cell?.textLabel?.font = UIFont.systemFont(ofSize: 14)
+        }
         
         return cell!
     }
